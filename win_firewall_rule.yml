@@ -11,4 +11,14 @@
       action: block
       direction: In
       protocol: TCP
-...
+  - name: verify the access
+    uri:
+      url: http://ec2-18-139-85-74.ap-southeast-1.compute.amazonaws.com
+      return_content: yes
+      status_code: 200
+    delegate_to: localhost
+    register: out
+  - name: printing the output
+    debug:
+      var: out
+  
