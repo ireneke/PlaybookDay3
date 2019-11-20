@@ -1,0 +1,9 @@
+- name: create a group  
+  hosts: all  
+  tasks: 
+  - name: Create a new group
+    win_group:
+      name: IKdeploy
+      description: Deploy Group
+      state: present
+...
