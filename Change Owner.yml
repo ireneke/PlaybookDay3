@@ -1,8 +1,11 @@
 ---
-- name: Restrict write and execute access to User IK
-  win_acl:
-    user: user_IK
-    path: C:\\test.conf
-    type: allow
-    rights: ExecuteFile,Write
-    ...
+- name: create a folder  
+  hosts: all  
+  tasks: 
+  - name: Restrict write and execute access to User IK
+    win_acl:
+        user: user_IK
+        path: C:\\test.conf
+        type: allow
+        rights: Fullcontrol
+...
