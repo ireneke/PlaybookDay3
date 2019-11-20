@@ -8,5 +8,5 @@
     register: out
   - name: show the stat
     debug:
-      ver: out
+      var: out
 ...
