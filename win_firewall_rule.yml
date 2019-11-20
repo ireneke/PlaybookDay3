@@ -1,5 +1,5 @@
 --- 
-- name: testing firewall  
+- name: testing firewalls 
   hosts: all  
   tasks:  
   - name: Denying port 80
