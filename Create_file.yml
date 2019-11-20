@@ -4,6 +4,6 @@
   tasks:  
   - name: create a file or modify timestamp if already present
     win_file:
-      name: c:\Temp\test.conf
+      name: c:\\Temp\\test.conf
       state: touch
 ...
