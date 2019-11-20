@@ -1,0 +1,12 @@
+--- 
+- name: chk file avialability  
+  hosts: all  
+  tasks:  
+  - name: chk file avialability
+    win_stat:
+      name: c:\\test.conf
+    register: out
+  - name: show the stat
+    debug:
+      ver: out
+...
