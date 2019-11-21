@@ -11,4 +11,11 @@
     win_user_profile:
       username: IK2
       state: present
+
+  - name: Adding a local and domain user to a local group.
+    win_group_membership:
+      name: IKdeploy
+      members:
+      - IK2
+      state: present
 ...
