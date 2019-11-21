@@ -6,9 +6,9 @@
     win_user:
       name: IK2
       state: present
-      
+
   - name: Create a local profile 
     win_user_profile:
-      uisername: IK2
+      username: IK2
       state: present
 ...
